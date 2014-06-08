@@ -29,7 +29,6 @@ my $script_file = file(File::Spec->catfile($dir, 'script', 'test-app.pl'));
 
 my $cmp_file_data = do { local $/; <DATA> };
 is($script_file->slurp(), $cmp_file_data);
-print $dir;
 
 
 done_testing();
